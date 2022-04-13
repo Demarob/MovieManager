@@ -1,4 +1,4 @@
-package ru.Netology.domain;
+package ru.netology.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +9,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class Movie {
     private int id;
-    private int filmId;
-    private String filmName;
-    private String genre;
+    private String name;
+    private String movieGenre;
+    private boolean premiereTomorrow;
+
 }
