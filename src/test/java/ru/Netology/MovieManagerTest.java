@@ -1,8 +1,8 @@
-package ru.Netology;
+package ru.netology;
 
 import org.junit.jupiter.api.Test;
 import ru.netology.domain.Movie;
-import ru.Netology.manager.MovieManager;
+import ru.netology.manager.MovieManager;
 
 import static org.junit.jupiter.api.Assertions.*;
 
