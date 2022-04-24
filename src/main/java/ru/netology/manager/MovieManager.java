@@ -40,16 +40,6 @@ public class MovieManager {
     }
 
     public Movie[] findAll() {
-        int resultLength = movies.length;
-        if (resultLength >= countMovie) {
-            resultLength = countMovie;
-        } else {
-            resultLength = movies.length;
-        }
-        Movie[] result = new Movie[resultLength];
-        for (int i = 0; i < resultLength; i++) {
-            result[i] = movies[i];
-        }
-        return result;
+        return movies;
     }
 }

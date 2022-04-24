@@ -52,8 +52,9 @@ class MovieManagerTest {
         movie.add(movie8);
         movie.add(movie9);
         movie.add(movie10);
+        movie.add(movie11);
 
-        Movie[] expected = {movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, movie10};
+        Movie[] expected = {movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, movie10, movie11};
         Movie[] actual = movie.findAll();
 
         assertArrayEquals(expected, actual);
@@ -71,7 +72,7 @@ class MovieManagerTest {
         movie.add(movie8);
         movie.add(movie9);
         movie.add(movie10);
-        movie.add(movie11);
+
 
         Movie[] expected = {movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, movie10};
         Movie[] actual = movie.findAll();
@@ -81,15 +82,13 @@ class MovieManagerTest {
 
     @Test
     public void shouldFindAllLimit5() {
-        MovieManager movie = new MovieManager(5);
 
         movie.add(movie1);
         movie.add(movie2);
         movie.add(movie3);
         movie.add(movie4);
         movie.add(movie5);
-        movie.add(movie6);
-        movie.add(movie7);
+
 
         Movie[] expected = {movie1, movie2, movie3, movie4, movie5};
         Movie[] actual = movie.findAll();
@@ -98,7 +97,7 @@ class MovieManagerTest {
     }
 
     @Test
-    public void shouldLastTenMovie() {
+    public void shouldLastSevenMovie() {
         movie.add(movie1);
         movie.add(movie2);
         movie.add(movie3);
